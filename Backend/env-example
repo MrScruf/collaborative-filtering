@@ -1,0 +1,15 @@
+# Set to production when deploying to production
+NODE_ENV=production
+
+#Token used for jwt token encryption
+JWT_TOKEN=ee78e650294c6bb6d113df4ae88fbb5cc5b9d5cead375c1454e824027710c3849e0b7f4271d48e2e944dabc3c3682022afae1955b6dc64bf5be60b80e3526f07
+
+# Node.js server configuration
+SERVER_PORT=6666
+
+#Database connection settings for your PostgreSQL database
+PGUSER=user
+PGHOST=url_address
+PGDATABASE=database_name
+PGPASSWORD=password
+PGPORT=4569

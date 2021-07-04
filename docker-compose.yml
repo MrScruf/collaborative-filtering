@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  api:
+    build: ./Backend
+    ports:
+      - "6666:6666"
+    networks:
+        main:
+            aliases:
+                - api
+
+  web:
+    build: ./Frontend
+    ports:
+      - "6665:80"
+    links:
+      - api:api
+    depends_on:
+      - api
+    networks:
+        main:
+            aliases:
+                - web
+networks:
+  main:
